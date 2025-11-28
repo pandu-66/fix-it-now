@@ -1,0 +1,53 @@
+.bla{
+    padding: 30px;
+    max-width: 400px;
+    margin: 60px auto;
+}
+
+.selector{
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 8px;
+    outline: none;
+    border-radius: 8px;
+    color: var(--text-dark);
+    font-weight: 500;
+    font-size: medium;
+}
+
+.comp-text{
+    margin-top: 15px;
+    text-align: center;
+}
+
+.comp-span{
+    color: #2D72D9;
+    cursor: pointer;
+}
+
+.input{
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 8px;
+    border: 1px solid var(--text-medium);
+    outline: none;
+    border-radius: 8px;
+    color: var(--text-dark);
+    font-weight: 500;
+    font-size: medium;
+}
+
+.input-error{
+    border-color: var(--danger);
+}
+
+.error-text{
+    color: var(--danger);
+}
+
+@media (max-width: 500px) {
+  .card {
+    padding: 15px;
+    margin: 30px 10px;
+  }
+}
