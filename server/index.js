@@ -17,13 +17,13 @@ app.use(express.json());
 app.use(cookieParser());
 
 async function main(){
-    await mongoose.connect('mongodb://127.0.0.1:27017/fixitnow');
+    await mongoose.connect(process.env.ATLAS_URL);
 }
 
 main().then(()=>console.log("DB connected")).catch((err)=>console.log(err));
 
 app.use(cors({
-    origin: "http://localhost:5173",
+    origin: process.env.CORS_ORIGIN,
     credentials: true
 }));
 
